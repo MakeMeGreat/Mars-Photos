@@ -21,12 +21,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.example.android.marsphotos"
         minSdkVersion 21
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -61,12 +61,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
 
     implementation 'com.google.android.material:material:1.7.0'
-
     // Retrofit with Moshi Converter
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
-
     // Moshi
     implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
+    // Coil
+    implementation "io.coil-kt:coil:1.1.1"
 
 
 }
