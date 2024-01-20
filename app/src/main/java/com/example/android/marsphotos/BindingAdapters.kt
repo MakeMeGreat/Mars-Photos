@@ -21,9 +21,6 @@ fun bindImage(imgView: ImageView, imgUrl: String?) {
     }
 }
 
-class BindingAdapters {
-}
-
 @BindingAdapter("listData")
 fun bindRecyclerView(
     recyclerView: RecyclerView,
