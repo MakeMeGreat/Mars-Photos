@@ -23,9 +23,7 @@ class PhotoGridAdapter :
         viewType: Int
     ): PhotoGridAdapter.MarsPhotoViewHolder {
         return MarsPhotoViewHolder(
-            GridViewItemBinding.inflate(
-                LayoutInflater.from(parent.context)
-            )
+            GridViewItemBinding.inflate(LayoutInflater.from(parent.context))
         )
     }
 
@@ -42,7 +40,5 @@ class PhotoGridAdapter :
         override fun areContentsTheSame(oldItem: MarsPhoto, newItem: MarsPhoto): Boolean {
             return oldItem.imgSrcUrl == newItem.imgSrcUrl
         }
-
     }
-
 }
